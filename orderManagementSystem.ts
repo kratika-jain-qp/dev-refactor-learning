@@ -1,14 +1,16 @@
 import { Customer } from "./customer";
+import { CustomerEnum } from "./customer.enum";
+import { ItemEnums } from "./item.enum";
 import { Order } from "./order";
 
 export class OrderManagementSystem {
     static main(): void {
-        const customer = new Customer("John Doe", "VIP");
+        const customer = new Customer("John Doe", CustomerEnum.VIP);
         const order = new Order(customer);
 
-        order.addItem("Laptop", 1000);
-        order.addItem("Mouse", 50);
-        order.addItem("Keyboard", 80);
+        order.addItem(ItemEnums.Laptop, 1000);
+        order.addItem(ItemEnums.Mouse, 50);
+        order.addItem(ItemEnums.Keyboard, 80);
 
         order.printOrder();
 
