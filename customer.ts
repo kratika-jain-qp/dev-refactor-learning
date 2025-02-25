@@ -1,4 +1,4 @@
-import { CustomerEnum } from "./customer.enum";
+import { CustomerEnum } from "./enums/customer.enum";
 
 export class Customer {
     name: string;

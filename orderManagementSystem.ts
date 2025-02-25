@@ -1,6 +1,6 @@
 import { Customer } from "./customer";
-import { CustomerEnum } from "./customer.enum";
-import { ItemEnums } from "./item.enum";
+import { CustomerEnum } from "./enums/customer.enum";
+import { ItemEnums } from "./enums/item.enum";
 import { Order } from "./order";
 
 export class OrderManagementSystem {
