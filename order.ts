@@ -31,7 +31,7 @@ export class Order {
     }
 
     printOrder(): void {
-        console.log(`Customer: ${this.customer.name}`);
+        console.log(`Customer: ${this.customer.getName()}`);
         console.log(`Items: ${this.items.join(", ")}`);
         console.log(`Total Price: ${this.totalPrice}`);
         console.log(`Discounted Price: ${this.discountedPrice}`);

@@ -1,5 +1,5 @@
 export enum CustomerEnum {
-    Regular = "Regular",
-    Premium = "Premium",
+    REGULAR = "Regular",
+    PREMIUM = "Premium",
     VIP = "VIP"
 }

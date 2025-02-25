@@ -1,5 +1,5 @@
 export enum ItemEnums {
-    Laptop = 'Laptop',
-    Mouse = 'Mouse',
-    Keyboard = 'Keyboard'
+    LAPTOP = 'Laptop',
+    MOUSE = 'Mouse',
+    KEYBOARD = 'Keyboard'
 }

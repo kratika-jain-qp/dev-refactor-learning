@@ -8,9 +8,9 @@ export class OrderManagementSystem {
         const customer = new Customer("John Doe", CustomerEnum.VIP);
         const order = new Order(customer);
 
-        order.addItem(ItemEnums.Laptop, 1000);
-        order.addItem(ItemEnums.Mouse, 50);
-        order.addItem(ItemEnums.Keyboard, 80);
+        order.addItem(ItemEnums.LAPTOP, 1000);
+        order.addItem(ItemEnums.MOUSE, 50);
+        order.addItem(ItemEnums.KEYBOARD, 80);
 
         order.printOrder();
 
@@ -19,7 +19,7 @@ export class OrderManagementSystem {
 
     static generateInvoice(order: Order): void {
         console.log("Generating Invoice...");
-        console.log(`Customer: ${order.customer.name}`);
+        console.log(`Customer: ${order.customer.getName()}`);
         console.log(`Total: $${order.totalPrice}`);
         console.log(`Discounted Total: $${order.discountedPrice}`);
         console.log(`Items: ${order.items.join(", ")}`);
